@@ -309,7 +309,7 @@
                 <li style="margin-bottom: 0.5rem;"><a href="#note-notation" style="color: var(--accent); text-decoration: none;">Address Notation</a></li>
                 <li style="margin-bottom: 0.5rem;"><a href="#collections-vs-daily-logs" style="color: var(--accent); text-decoration: none;">Collections vs. Daily Logs</a></li>
                 <li style="margin-bottom: 0.5rem;"><a href="#cross-references" style="color: var(--accent); text-decoration: none;">Cross-References Between Notes</a></li>
-                <li style="margin-bottom: 0.5rem;"><a href="#migration-system" style="color: var(--accent); text-decoration: none;">Migration System</a></li>
+                <li style="margin-bottom: 0.5rem;"><a href="#migration-system" style="color: var(--accent); text-decoration: none;">Synthesis & Migration</a></li>
                 <li style="margin-bottom: 0.5rem;"><a href="#bidirectional-index" style="color: var(--accent); text-decoration: none;">Bidirectional Index System</a></li>
                 <li style="margin-bottom: 0.5rem;"><a href="#getting-started" style="color: var(--accent); text-decoration: none;">Getting Started Workflow</a></li>
                 <li style="margin-bottom: 0.5rem;"><a href="#quick-reference" style="color: var(--accent); text-decoration: none;">Quick Reference Table</a></li>
@@ -358,7 +358,7 @@
             &lt;bullet&gt; &lt;source&gt;.&lt;locator&gt;:&lt;content-type&gt;
         </div>
 
-        <h3>Bullet Types</h3>
+        <h3>Bullets</h3>
         <p>The bullet symbol indicates your relationship to the note:</p>
         <ul>
             <li><strong>- (dash):</strong> Passive note - Something interesting or worth capturing. No action needed.</li>
@@ -388,7 +388,7 @@
             <strong>Ranges:</strong> Use hyphen for spans: <code>127.3-5</code> (same page), <code>127.3-129.2</code> (across pages), <code>2847-2901</code> (ebook), <code>John3:16-18</code> (references)
         </div>
 
-        <h3>Content Type Indicators (Optional)</h3>
+        <h3>Content Indicators (Optional)</h3>
         <ul>
             <li><code>:A</code> = Argument or claim</li>
             <li><code>:D</code> = Definition</li>
@@ -448,25 +448,25 @@
             <li><strong>Chained references:</strong> <code>ABCD.127.3 → WXYZ.203.4 → RSTR.89.2</code></li>
         </ul>
 
-        <h2 id="migration-system">Migration System</h2>
-        <p>When notes are referenced or moved elsewhere, mark them inline with the <code>></code> bullet:</p>
+        <h2 id="migration-system">Synthesis & Migration</h2>
+        <p>When notes are expanded or relocated, mark them inline with the <code>></code> bullet:</p>
         
-        <p><strong>Two types of migration:</strong></p>
+        <p><strong>Two types:</strong></p>
         <ul>
-            <li><strong>Cross-reference (<code>→p.47</code>):</strong> Note still lives here, but there's additional content or synthesis elsewhere in the journal</li>
-            <li><strong>Tombstone (<code>|Obsidian</code>):</strong> Note has been moved entirely out of the journal to an external tool</li>
+            <li><strong>Synthesis (<code>→p.47</code>):</strong> Additional content or synthesis exists elsewhere—both locations remain valuable</li>
+            <li><strong>Migration (<code>|Obsidian</code>):</strong> Note is now tracked in another system entirely</li>
         </ul>
 
         <h3>Examples</h3>
         
-        <p><strong>Cross-reference (note expanded elsewhere):</strong></p>
+        <p><strong>Synthesis (expanded elsewhere):</strong></p>
         <div class="code-block" style="padding: 0.7rem;">Before:
 • ABCD.141.2:A Does this apply to polarization?
 
 After:
 > ABCD.141.2:A Does this apply to polarization? →p.47</div>
 
-        <p><strong>Tombstone (moved entirely):</strong></p>
+        <p><strong>Migration (moved to external system):</strong></p>
         <div class="code-block" style="padding: 0.7rem;">Before:
 • ABCD.141.2:A Does this apply to polarization?
 
@@ -480,7 +480,7 @@ After:
             <div class="card">
                 <h4>1. Back of Each Book</h4>
                 <p>Write the book's code and journal locations:</p>
-                <div class="code-block">BuJo Book Code: ABCD
+                <div class="code-block">Book Code: ABCD
 NB05 - 82, 102, 134
 NB06 - 33, 112</div>
             </div>
@@ -496,11 +496,11 @@ BDKE - 23, 100</div>
 
         <div class="card" style="margin-top: 2rem;">
             <h4>3. Main Book Index</h4>
-            <p>Your Rosetta Stone - maintain a main list of all book codes and titles:</p>
-            <div class="code-block">ABCD - The Righteous Mind
-WXYZ - Thinking, Fast and Slow
-EFGH - Meditations
-RSTR - Range</div>
+            <p>Maintain a main list of all book codes, titles, and ISBNs (ensures you can find the exact edition if you need to replace a lost book):</p>
+            <div class="code-block">ABCD - The Righteous Mind (ISBN: 978-0307455772)
+WXYZ - Thinking, Fast and Slow (ISBN: 978-0374533557)
+EFGH - Meditations (ISBN: 978-0140449334)
+RSTR - Range (ISBN: 978-0735214484)</div>
         </div>
 
         <h3>Multiple Entry Points</h3>
@@ -542,7 +542,7 @@ RSTR - Range</div>
         <div class="workflow-step">
             <h4>After Reading Sessions</h4>
             <ul>
-                <li>Update the back of the book with journal reference (e.g., "NB05, p.47")</li>
+                <li>Update the back of the book with journal reference</li>
                 <li>Update your journal's Book Notes index with the book code and page numbers</li>
             </ul>
         </div>
@@ -550,10 +550,10 @@ RSTR - Range</div>
         <div class="workflow-step">
             <h4>Periodic Review (Weekly/Monthly)</h4>
             <ul>
-                <li>Review active inquiries (•) and decide if they need migration</li>
+                <li>Review active inquiries (•)</li>
                 <li>Create collections for themes that have emerged</li>
-                <li>Migrate related notes using > bullets and migration event notes</li>
-                <li>Add cross-references as new connections become apparent</li>
+                <li>Synthesize or relocate notes</li>
+                <li>Add cross-references</li>
             </ul>
         </div>
 
@@ -561,47 +561,47 @@ RSTR - Range</div>
         <table>
             <tr>
                 <th>Symbol</th>
-                <th>Ontology</th>
+                <th>Type</th>
                 <th>Meaning</th>
             </tr>
             <tr>
                 <td>-</td>
-                <td>Bullet Type</td>
+                <td>Bullet</td>
                 <td>Passive note (complete as-is)</td>
             </tr>
             <tr>
                 <td>•</td>
-                <td>Bullet Type</td>
+                <td>Bullet</td>
                 <td>Active inquiry (needs follow-up)</td>
             </tr>
             <tr>
                 <td>○</td>
-                <td>Bullet Type</td>
+                <td>Bullet</td>
                 <td>Event/Application (specific use planned)</td>
             </tr>
             <tr>
                 <td>></td>
-                <td>Bullet Type</td>
+                <td>Bullet</td>
                 <td>Referenced/Moved (use →p.47 for cross-ref or |tool for tombstone)</td>
             </tr>
             <tr>
                 <td>:A</td>
-                <td>Content Type</td>
+                <td>Content</td>
                 <td>Argument or claim</td>
             </tr>
             <tr>
                 <td>:D</td>
-                <td>Content Type</td>
+                <td>Content</td>
                 <td>Definition</td>
             </tr>
             <tr>
                 <td>:Q</td>
-                <td>Content Type</td>
+                <td>Content</td>
                 <td>Direct quote</td>
             </tr>
             <tr>
                 <td>:F</td>
-                <td>Content Type</td>
+                <td>Content</td>
                 <td>Figure/Image/Diagram</td>
             </tr>
             <tr>
